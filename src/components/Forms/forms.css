@@ -1,0 +1,19 @@
+.forms{
+    width: 640px;
+    border: solid 2px lightgray;
+    border-radius: 5%;
+    padding: 1em;
+}
+
+.forms input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
