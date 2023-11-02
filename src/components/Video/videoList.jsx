@@ -1,4 +1,5 @@
 import Video from "./video";
+import './video.css'
 
 function VideoList({ videos, emptyHeading }) {
     const count = videos.length;
@@ -7,13 +8,15 @@ function VideoList({ videos, emptyHeading }) {
       const noun = count > 1 ? 'Videos' : 'Video';
       heading = count + ' ' + noun;
     }
-    
+
     return (
       <section>
         <h2>{heading}</h2>
-        {videos.map(video =>
-            <Video key={video.id} video={video} />
-        )}
+        <div className='video-list'>
+            {videos.map(video =>
+                <Video key={video.id} video={video} />
+            )}
+        </div>
       </section>
     );
 }

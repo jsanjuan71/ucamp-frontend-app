@@ -3,9 +3,10 @@
     border: solid 2px lightgray;
     border-radius: 5%;
     padding: 1em;
+    margin: 1em;
 }
 
-.forms input {
+.forms input, .forms select {
     width: 100%;
     height: 40px;
     border: 1px solid #ccc;

@@ -4,7 +4,7 @@ function Forms({children, headerText, submitText, submitHandler, whiteBg = false
 
     const submit = (event) => {
         event.preventDefault();
-        submitHandler();
+        typeof submitHandler === 'function' && submitHandler();
     }
     return (
         <form className="forms" onSubmit={submit}>
