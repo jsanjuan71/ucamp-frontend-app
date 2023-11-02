@@ -1,11 +1,25 @@
 
 .video {
+    padding: 1em;   margin: 1em;
     display: flex;
     border: solid 2px lightgray;
+    border-radius: 5%;
+}
+
+.video .info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    border-radius: 5%;
+    padding: 1em;
 }
 
 .video img{
     width: 240px;
-    height: 240px;
     border-radius: 10%;
+}
+
+.video-list {
+    width: 640px;
 }
